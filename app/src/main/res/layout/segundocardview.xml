@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/R1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fondo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/fondo"/>
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_below="@id/fondo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/texto"
+                android:text="Advantages of Andoird CardView"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/nino"/>
+
+            <TextView
+                android:id="@+id/titulo2"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/foto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:text="Danny"/>
+
+            <ImageView
+                android:id="@+id/imagenlapiz"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/titulo2"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editar"/>
+            <TextView
+                android:layout_toRightOf="@id/imagenlapiz"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="15 comments"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/foto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You can see the items in an orderly fashion"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="When it comes to programming this, there is greater ease and time saving"/>
+
+                <Button
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:textSize="17sp"
+                    android:text="READ MORE"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
